@@ -3,7 +3,6 @@ import { View, TouchableOpacity, Text, Image, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import colors from "../colors";
 import { Entypo } from "@expo/vector-icons";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import PlaceItem from "../components/PlaceItem";
 import { useSelector, useDispatch } from "react-redux";
 import { FlatList } from "react-native-gesture-handler";
@@ -23,7 +22,6 @@ const Home = ({ image, title }) => {
       headerRight: () => (
         <TouchableOpacity onPress={() => navigation.navigate("ProfilePicture")}>
           <Text style={styles.newpost}>New post</Text>
-          {/* <Ionicons name="md-add" color={"black"} size={50} /> */}
         </TouchableOpacity>
       ),
     });

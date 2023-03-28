@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
-const backImage = require("../assets/colores.jpg");
+const backImage = require("../assets/colores.png");
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");

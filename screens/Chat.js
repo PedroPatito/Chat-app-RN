@@ -1,10 +1,9 @@
 import React, {
   useState,
-  useEffect,
   useLayoutEffect,
   useCallback,
 } from "react";
-import { TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity} from "react-native";
 import { GiftedChat } from "react-native-gifted-chat";
 import {
   collection,
@@ -19,7 +18,6 @@ import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
 import colors from "../colors";
 
-const backChat = require("../assets/backchat.jpg");
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
@@ -71,7 +69,7 @@ export default function Chat() {
     setMessages((previousMessages) =>
       GiftedChat.append(previousMessages, messages)
     );
-    // setMessages([...messages, ...messages]);
+    
     const { _id, createdAt, text, user } = messages[0];
     addDoc(collection(database, "chats"), {
       _id,

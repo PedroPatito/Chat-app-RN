@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "ChatAppRN",
+    "slug": "chatapprn",
+    "version": "1.0.0",
+    "platforms": ["ios", "android"],
+    "orientation": "portrait",
+    "icon": "./assets/iconcustom.png",
+    "splash": {
+      "image": "./assets/splashcustom.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coderhouse.places",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.coderhouse.places",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconcustom.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": ["CAMERA", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "929153d3-9be4-47a4-9e58-b15f71c37985"
+      }
+    },
+
+    "owner": "pedropatito"
+  }
+}
