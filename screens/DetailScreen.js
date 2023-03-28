@@ -33,8 +33,9 @@ const styles = StyleSheet.create({
   image: {
     height: "35%",
     minHeight: 300,
-    width: "100%",
+    width: "80%",
     padding: 20,
+    borderRadius: 10,
   },
   location: {
     margin: 20,

@@ -45,7 +45,7 @@ const ImageSelector = (props) => {
     <View style={styles.container}>
       <View style={styles.preview}>
         {!pickedUri ? (
-          <Text>Seleccione su foto de perfil</Text>
+          <Text>Select picture</Text>
         ) : (
           <Image style={styles.image} source={{ uri: pickedUri }} />
         )}

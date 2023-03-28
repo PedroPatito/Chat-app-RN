@@ -18,11 +18,21 @@ export default PlaceItem;
 const styles = StyleSheet.create({
   placeItem: {
     borderBottomColor: "#ccc",
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     paddingVertical: 16,
     paddingHorizontal: 30,
     flexDirection: "row",
     alignItems: "center",
+    margin: 10,
+    // backgroundColor: '#E9C46A',
+    borderRadius: 15,
+    // shadowColor: "black",
+    // shadowOpacity: 1,
+    // shadowOffset: { width: 1, height: 5 },
+    // shadowRadius: 10,
+    // elevation: 10,
+    
+
   },
   image: {
     width: 90,
@@ -38,8 +48,9 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "black",
-    fontSize: 18,
+    fontSize: 20,
     marginBottom: 6,
+    marginLeft: 20,
   },
   address: {
     color: "#777",
